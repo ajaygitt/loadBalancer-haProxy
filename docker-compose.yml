@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    lib:
+          image: haproxy
+          ports:
+            - "8080:8080"
+          volumes:
+            - "./haproxy:/usr/local/etc/haproxy"
+    nodeapp1:
+      image: nodepp:latest
+      env_file: .env.serviceOne
+    nodeapp2: 
+      image: nodepp:latest
+      env_file: .env.serviceTwo
+
+    nodeapp3: 
+      image: nodepp:latest
+      env_file: .env.serviceThree
+
+   
