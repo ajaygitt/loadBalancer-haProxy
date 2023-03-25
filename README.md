@@ -1,3 +1,3 @@
 # loadBalancer-haProxy
 
-- This is the demonstration of load-balancing http server using haProxy.
+- This is a demonstration of load-balancing an http server using haProxy.
